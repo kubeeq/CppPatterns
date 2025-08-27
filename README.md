@@ -10,7 +10,7 @@ Collection of C++ pattern implementations and memory management examples
 2. **02_basics_pointers_multiply**  - Умножение массива через указатели 
 3. **03_strategy_array_multiplier** - Паттерн Strategy для умножения массивов
 4. **04_factory_method_strategy** - Factory Method для создания стратегий
-5. 
+5. **05_dynamic_strategy_switching** - Динамическая смена стратегий с историей
 
 
 ## 🛠️ Требования
