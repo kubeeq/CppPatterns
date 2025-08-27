@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(03_strategy_array_multiplier)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Включаем директорию с заголовочными файлами
+include_directories(include)
+
+add_executable(strategy_multiplier src/main.cpp)
+
+# Включение санитайзеров для отладки памяти
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    target_compile_options(strategy_multiplier PRIVATE -Wall -Wextra -g)
+    target_link_options(strategy_multiplier PRIVATE -fsanitize=address,undefined)
+endif()
