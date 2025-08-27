@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.10)
+project(04_factory_method_strategy)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Включаем директорию с заголовочными файлами
+include_directories(include)
+
+add_executable(factory_strategy src/main.cpp)
+
+# Включение санитайзеров для отладки памяти
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    target_compile_options(factory_strategy PRIVATE -Wall -Wextra -g)
+    target_link_options(factory_strategy PRIVATE -fsanitize=address,undefined)
+endif()
