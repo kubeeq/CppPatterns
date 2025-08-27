@@ -14,7 +14,7 @@ cd build
 cmake ..
 make
 
-##Как запустить
+##  Как запустить
 ./array_operations
 
 ## Пример работы
