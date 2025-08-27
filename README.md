@@ -7,13 +7,9 @@ Collection of C++ pattern implementations and memory management examples
 ## 📁 Структура проектов
 
 1. **01_basics_arrays_reverse_sum** - Базовые операции с массивами
-2. **02_strategy_array_multiplier** - Паттерн Strategy для умножения массивов  
-3. **03_factory_method_strategy** - Factory Method для создания стратегий
-4. **04_dynamic_strategy_switching** - Динамическая смена стратегий
-5. **05_advanced_strategy_system** - Продвинутая система с историей и отменой
-6. **06_memory_smallvector_rule_of_five** - Управление памятью и Rule of Five
-7.
-8.
+2. **02_basics_pointers_multiply**  - Умножение массива через указатели 
+3. **03_strategy_array_multiplier** - Паттерн Strategy для умножения массивов  
+
 
 ## 🛠️ Требования
 
