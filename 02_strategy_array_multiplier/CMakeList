@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(02_basics_pointers_multiply)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_executable(pointer_multiply src/main.cpp)
+
+# Включение санитайзеров для отладки памяти
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    target_compile_options(pointer_multiply PRIVATE -Wall -Wextra -g)
+    target_link_options(pointer_multiply PRIVATE -fsanitize=address,undefined)
+endif()
